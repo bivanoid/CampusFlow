@@ -1,0 +1,122 @@
+[
+	{
+		"id": "t01",
+		"matkul_id": "pwl",
+		"judul": "Membuat Dashboard dengan Next.js",
+		"deskripsi": "Buat 3 halaman (Dashboard, Mata Kuliah, Detail Tugas) menggunakan data dummy lokal dan tampilan responsif.",
+		"deadline": "2026-10-04T23:59:00+07:00",
+		"status": "belum_dikumpulkan",
+		"dikumpulkan_pada": null,
+		"file": null,
+		"nilai": null,
+		"catatan_dosen": null
+	},
+	{
+		"id": "t02",
+		"matkul_id": "imk",
+		"judul": "Wireframe & High-Fidelity Portal Akademik",
+		"deskripsi": "Kumpulkan wireframe dan desain high-fidelity untuk 3 ukuran layar (360, 768, 1280 px) dalam satu file Figma.",
+		"deadline": "2026-10-06T23:59:00+07:00",
+		"status": "dikumpulkan",
+		"dikumpulkan_pada": "2026-10-01T09:15:00+07:00",
+		"file": "campusflow-figma-link.pdf",
+		"nilai": null,
+		"catatan_dosen": null
+	},
+	{
+		"id": "t03",
+		"matkul_id": "pps",
+		"judul": "Diagram UML Sistem Akademik",
+		"deskripsi": "Buat use case diagram dan class diagram untuk sistem informasi akademik.",
+		"deadline": "2026-10-05T23:59:00+07:00",
+		"status": "belum_dikumpulkan",
+		"dikumpulkan_pada": null,
+		"file": null,
+		"nilai": null,
+		"catatan_dosen": null
+	},
+	{
+		"id": "t04",
+		"matkul_id": "pbo",
+		"judul": "Latihan Inheritance dan Polymorphism",
+		"deskripsi": "Implementasikan studi kasus kendaraan menggunakan inheritance, polymorphism, dan interface.",
+		"deadline": "2026-09-28T23:59:00+07:00",
+		"status": "terlambat",
+		"dikumpulkan_pada": "2026-09-29T08:40:00+07:00",
+		"file": "latihan-pbo.zip",
+		"nilai": null,
+		"catatan_dosen": null
+	},
+	{
+		"id": "t05",
+		"matkul_id": "jkd",
+		"judul": "Laporan Praktikum Topologi Jaringan",
+		"deskripsi": "Susun laporan simulasi topologi star dan mesh beserta analisis perbandingannya.",
+		"deadline": "2026-09-24T23:59:00+07:00",
+		"status": "dinilai",
+		"dikumpulkan_pada": "2026-09-23T20:10:00+07:00",
+		"file": "laporan-topologi.pdf",
+		"nilai": 88,
+		"catatan_dosen": "Analisis sudah baik, tambahkan perbandingan latensi."
+	},
+	{
+		"id": "t06",
+		"matkul_id": "ppl",
+		"judul": "Perbandingan Model Proses Perangkat Lunak",
+		"deskripsi": "Bandingkan model Waterfall, Agile, dan Spiral dalam bentuk makalah 3-5 halaman.",
+		"deadline": "2026-10-08T23:59:00+07:00",
+		"status": "belum_dikumpulkan",
+		"dikumpulkan_pada": null,
+		"file": null,
+		"nilai": null,
+		"catatan_dosen": null
+	},
+	{
+		"id": "t07",
+		"matkul_id": "ai",
+		"judul": "Studi Kasus Tata Letak Pabrik",
+		"deskripsi": "Analisis tata letak fasilitas dari satu studi kasus industri dan usulkan perbaikannya.",
+		"deadline": "2026-10-12T23:59:00+07:00",
+		"status": "belum_dikumpulkan",
+		"dikumpulkan_pada": null,
+		"file": null,
+		"nilai": null,
+		"catatan_dosen": null
+	},
+	{
+		"id": "t08",
+		"matkul_id": "upd",
+		"judul": "Refleksi Pembelajaran Pekan 3",
+		"deskripsi": "Tulis refleksi singkat (maksimal 1 halaman) tentang materi yang sudah dipelajari.",
+		"deadline": "2026-10-02T23:59:00+07:00",
+		"status": "dikumpulkan",
+		"dikumpulkan_pada": "2026-10-01T07:30:00+07:00",
+		"file": "refleksi-pekan3.pdf",
+		"nilai": null,
+		"catatan_dosen": null
+	},
+	{
+		"id": "t09",
+		"matkul_id": "pwl",
+		"judul": "Quiz Dasar React dan TypeScript",
+		"deskripsi": "Kerjakan latihan komponen React dengan props bertipe TypeScript.",
+		"deadline": "2026-09-20T23:59:00+07:00",
+		"status": "dinilai",
+		"dikumpulkan_pada": "2026-09-20T15:05:00+07:00",
+		"file": "quiz-react.zip",
+		"nilai": 92,
+		"catatan_dosen": "Struktur komponen rapi."
+	},
+	{
+		"id": "t10",
+		"matkul_id": "imk",
+		"judul": "Evaluasi Heuristik Antarmuka",
+		"deskripsi": "Lakukan evaluasi heuristik Nielsen pada satu aplikasi pilihan dan laporkan temuannya.",
+		"deadline": "2026-10-15T23:59:00+07:00",
+		"status": "belum_dikumpulkan",
+		"dikumpulkan_pada": null,
+		"file": null,
+		"nilai": null,
+		"catatan_dosen": null
+	}
+]
