@@ -1,0 +1,80 @@
+{
+	"jadwal": [
+		{
+			"id": "1",
+			"hari": "Senin",
+			"matkul": [
+				{
+					"nama_matkul": "Pemodelan Perangkat Lunak",
+					"ruang": "6012",
+					"pukul": "07.00 - 09.30",
+					"pengajar": "Umbu"
+				},
+				{
+					"nama_matkul": "Arsitektur Industri",
+					"ruang": "Laboratorium 3",
+					"pukul": "10.00 - 12.30",
+					"pengajar": "Hirzy"
+				}
+			]
+		},
+		{
+			"id": "2",
+			"hari": "Selasa",
+			"matkul": [
+				{
+					"nama_matkul": "Jaringan Komunikasi data",
+					"ruang": "Laboratorium 3",
+					"pukul": "10.00 - 12.30",
+					"pengajar": "Umbu"
+				}
+			]
+		},
+		{
+			"id": "3",
+			"hari": "Rabu",
+			"matkul": [
+				{
+					"nama_matkul": "Proses Perangkat Lunak",
+					"ruang": "Laboratorium 3",
+					"pukul": "07.50 - 09.30",
+					"pengajar": "Umbu"
+				},
+				{
+					"nama_matkul": "Interaksi Manusia dan Komputer",
+					"ruang": "Laboratorium 3",
+					"pukul": "10.30 - 12.30",
+					"pengajar": "Ilham"
+				}
+			]
+		},
+		{
+			"id": "4",
+			"hari": "Kamis",
+			"matkul": [
+				{
+					"nama_matkul": "Pemrograman Berorientasi Objek",
+					"ruang": "Laboratorium 3",
+					"pukul": "07.50 - 09.30",
+					"pengajar": "Umbu"
+				},
+				{
+					"nama_matkul": "Pemrograman Web Lanjut",
+					"ruang": "Laboratorium 1",
+					"pukul": "10.30 - 12.30",
+					"pengajar": "Ilham"
+				}, 
+				{
+					"nama_matkul": "Upitra DNA",
+					"ruang": "Laboratorium 1",
+					"pukul": "13.00 - 14.30",
+					"pengajar": "Zega"
+				}
+			]
+		}, {
+			"id": "5",
+			"hari": "Jumat",
+			"matkul": []
+		}
+	]
+}

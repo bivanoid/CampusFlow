@@ -1,0 +1,32 @@
+{
+  "mhs-2026-001": {
+    "id": "mhs-2026-001",
+    "name": "Firdhan Abivandya",
+    "student_id": "253036016",
+    "password": "123456",
+    "program": "Software Engineering",
+    "semester": 3,
+    "avatar_url": "/images/avatar.jpg",
+    "ipk": 3.75
+  },
+  "mhs-2026-002": {
+    "id": "mhs-2026-002",
+    "name": "Ida Larasati",
+    "student_id": "253036017",
+    "password": "123456",
+    "program": "Information Systems",
+    "semester": 3,
+    "avatar_url": "/images/ida.jpg",
+    "ipk": 3.85
+  },
+  "mhs-2026-003": {
+    "id": "mhs-2026-003",
+    "name": "Budi Santoso",
+    "student_id": "253036018",
+    "password": "123456",
+    "program": "Computer Science",
+    "semester": 1,
+    "avatar_url": "/images/budi.jpg",
+    "ipk": 3.50
+  }
+}
