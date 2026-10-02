@@ -1,11 +1,10 @@
 .con_dashboard {
-	width: auto;
+	width: 100%;
 	height: 100%;
-	background-color: var(--white1);
-	border: 2px solid var(--border);
-	padding: 4rem;
-	border-radius: 1rem;
+	min-height: 100vh;
+	padding: 2.25rem;
 	overflow: hidden;
+	padding-inline: 10vw;
 }
 
 .con_dashboard h1 {
@@ -15,8 +14,9 @@
 
 .con_dashboard h2 {
 	display: flex;
-	font-size: 1.25rem;
-	align-items: center;
+	font-size: 5rem;
+	text-transform: capitalize;
+	flex-direction: column;
 	margin-bottom: 1.25rem;
 }
 
@@ -42,11 +42,41 @@
 .con_items {
 	display: flex;
 	gap: 1rem;
+	/*max-width: fit-content;*/
 	width: 100%;
+	background-color: var(--dark2);
+	border-radius: 1.25rem;
+	padding: 0.5rem;
+	margin-left: 0;
+	border: var(--wbr) solid var(--border);
+}
+
+.jadwal_kosong {
+	width: 100%;
+	display: grid;
+	place-items: center;
+	height: 100px;
+	background-color: var(--white3);
+	padding: 1rem;
+	border-radius: 1.25rem;
+	border: var(--wbr) solid var(--border);
+}
+
+.jadwal_kosong p {
+	background-color: var(--dark1);
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+	width: 100%;
+	height: 100%;
+	border-radius: 12px;
+	display: grid;
+	place-items: center;
+	border: var(--wbr) solid var(--border);
 }
 
 .slide {
-	width: 75%;
+	width: fit-content;
 	height: auto;
 }
 
@@ -55,9 +85,7 @@
 }
 
 .item {
-	padding: 1rem;
-	background-color: var(--white3);
-	border: 2px solid var(--border);
+	background-color: var(--dark3);
 	padding: 1rem;
 	padding-bottom: 40px;
 	width: 320px;
@@ -65,11 +93,13 @@
 	flex-direction: column;
 	gap: 0.5rem;
 	border-radius: 12px;
+	border: var(--wbr) solid var(--border);
 }
 
 .item h3 {
 	font-size: 1rem;
 	font-weight: var(--fm);
+	color: var(--dark1);
 }
 
 .pukul_ruang {
@@ -77,6 +107,7 @@
 	align-items: center;
 	gap: 0.25rem;
 	opacity: 0.75;
+	color: var(--dark1);
 }
 
 .pukul_ruang svg {
@@ -86,7 +117,7 @@
 .pukul_ruang span {
 	height: 100%;
 	width: 0.25rem;
-	background-color: var(--white2);
+	background-color: var(--dark3);
 }
 
 .pengajar {

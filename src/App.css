@@ -6,20 +6,28 @@
 	--f1: "pf";
 	--fn: 450;
 	--fm: 500;
+	--fb: 600;
 
-	--cf: #272727;
+	--cf: #EEEDF0;
 
-	--primary: #AD7AFF;
+	--primary: #1A51E8;
 	--cl1: #000022;
 	--cl2: #D6E5E3;
 
-	--white1: #FFFFFF;
-	--white2: #F8F8F8;
+	--dark1: #1E2224;
+	--dark3: #1D1F20;
 	--white3: #EEEDF0;
 
-	--border: #E1E1E1;
+	--danger: #F65456;
+
+	--dark2:#101213;
+
+	--border: #1A1C1E;
 
 	--padding: 1rem;
+
+	--wbr: 1px;
+	--toeng: cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 * {
@@ -32,10 +40,29 @@
 }
 
 body {
-	background-color: var(--white2);
-	padding: var(--padding);
+	background-color: var(--dark1);
 }
 
-.pages {
-	overflow: hidden;
+a {
+	text-decoration: none;
 }
+
+.separator {
+	background-color: var(--border);
+}
+
+.swiper-slide {
+	margin-right: 0;
+}
+
+.mainLayout {
+	padding-left: calc(50px + 1.5rem * 2);
+}
+
+@media (max-width: 747px) {
+	.mainLayout {
+		padding-left: 0;
+		padding-top: calc(34px + 1rem * 2);
+	}
+}
+
