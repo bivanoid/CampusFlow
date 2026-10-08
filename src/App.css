@@ -1,8 +1,10 @@
 @font-face {
 	font-family: "pf";
-	src: url(./assets/fonts/Commissioner.ttf);
+	src: url(./assets/fonts/HostGrotesk-VariableFont_wght.ttf);
 }
 :root {
+	interpolate-size: allow-keywords;
+
 	--f1: "pf";
 	--fn: 450;
 	--fm: 500;
@@ -10,19 +12,21 @@
 
 	--cf: #EEEDF0;
 
-	--primary: #1A51E8;
+	--primary: #00487C;
 	--cl1: #000022;
 	--cl2: #D6E5E3;
 
 	--dark1: #1E2224;
 	--dark3: #1D1F20;
-	--white3: #EEEDF0;
+	--white4: #d7d5d5;
+	--white3: #E1E1E1;
+	--white2: #F8F8F8;
 
 	--danger: #F65456;
 
 	--dark2:#101213;
 
-	--border: #1A1C1E;
+	--border: #c0c0c0;
 
 	--padding: 1rem;
 
@@ -36,11 +40,13 @@
 	box-sizing: border-box;
 	font-family: var(--f1);
 	font-weight: var(--fn);
-	color: var(--cf);
+	
+	outline: none;
 }
 
 body {
-	background-color: var(--dark1);
+	background-color: var(--white3);
+	color: var(--dark2);
 }
 
 a {
@@ -49,6 +55,7 @@ a {
 
 .separator {
 	background-color: var(--border);
+	height: 2px;
 }
 
 .swiper-slide {
@@ -56,7 +63,48 @@ a {
 }
 
 .mainLayout {
-	padding-left: calc(50px + 1.5rem * 2);
+	padding-left: calc(50px + 1rem * 2);
+}
+
+.swiper-button-prev {
+	width: 20px;
+	height: 20px;
+}
+
+.rdp-month {
+	padding: var(--padding);
+}
+
+:is(.rdp-button_previous, .rdp-button_next) {
+	top: calc(var(--padding) - 2px) !important;
+	background-color: red;
+	color: red;
+	fill: red;
+}
+
+.rdp-button_previous {
+	left: var(--padding) !important;
+}
+
+:is(.rdp-button_previous, .rdp-button_next) polygon {
+	fill: var(--border);
+}
+
+.rdp-selected .rdp-day_button {
+	border-color: var(--primary) !important;
+	color: var(--primary) !important;
+}
+
+.rdp-button_next {
+	right: var(--padding) !important;
+}
+
+.rdp-day {
+	color: #78797A;
+}
+
+.rdp-day_button {
+	opacity: 1 !important;
 }
 
 @media (max-width: 747px) {

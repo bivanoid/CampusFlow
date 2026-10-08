@@ -8,6 +8,13 @@ Projek Pemrograman Web Lanjut
 ## Library
 1. swiper
 2. lucid-react (Ikon)
+3. react-day-picker
 
 ## Design
-1. Font: Commissioner - From Google Font
+1. Font: Commissioner - From Google Font.
+
+## Dashboard Pages
+
+1. Ringkasan IPK
+menampilkan nilai ipk dengan status penurunan atau peningkatan nilai dari semester sebelumnya.
+2. 

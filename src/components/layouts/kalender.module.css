@@ -1,0 +1,27 @@
+.con_kalender{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.con_tugas {
+	background-color: var(--primary);
+	
+	color: var(--white2);
+	margin-top: var(--padding);
+	width: 100%;
+}
+
+.con_tugas h3 {
+	color: var(--white2);
+	margin-bottom: 10px;
+	padding: 0.5rem;
+}
+
+.con_tugas li {
+	padding: 0.5rem;
+}
+.con_tugas p {
+	padding: 0.5rem;
+}

@@ -7,7 +7,8 @@
     "program": "Software Engineering",
     "semester": 3,
     "avatar_url": "./images/user/253036016.jpeg",
-    "ipk": 3.75
+    "ipk": 3.75,
+    "ipk_semester_lalu": 3.80
   },
   "mhs-2026-002": {
     "id": "mhs-2026-002",
@@ -17,7 +18,8 @@
     "program": "Information Systems",
     "semester": 3,
     "avatar_url": "/images/ida.jpg",
-    "ipk": 3.85
+    "ipk": 3.85,
+    "ipk_semester_lalu": 3.80
   },
   "mhs-2026-003": {
     "id": "mhs-2026-003",
@@ -27,6 +29,7 @@
     "program": "Computer Science",
     "semester": 1,
     "avatar_url": "/images/budi.jpg",
-    "ipk": 3.50
+    "ipk": 3.50,
+    "ipk_semester_lalu": 3.75
   }
 }

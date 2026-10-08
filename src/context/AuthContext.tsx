@@ -1,6 +1,6 @@
 import { createContext, useContext, useState, type ReactNode } from "react";
-import usersData from "../data/user.json";
-import type { SafeUser, User } from "../types/user";
+import { authenticate, getUserById } from "../lib/user";
+import type { SafeUser } from "../types/user";
 
 type LoginResult = { ok: true } | { ok: false; message: string };
 
@@ -10,34 +10,41 @@ interface AuthContextType {
 	logout: () => void;
 }
 
+const STORAGE_KEY = "campusflow_user_id";
+
 const AuthContext = createContext<AuthContextType | null>(null);
 
 export function AuthProvider({ children }: { children: ReactNode }) {
 	const [user, setUser] = useState<SafeUser | null>(() => {
 		try {
-			const saved = localStorage.getItem("user");
-			return saved ? (JSON.parse(saved) as SafeUser) : null;
+			const savedId = localStorage.getItem(STORAGE_KEY);
+			return savedId ? (getUserById(savedId) ?? null) : null;
 		} catch {
 			return null;
 		}
 	});
 
 	const login = (studentId: string, password: string): LoginResult => {
-		const found = (Object.values(usersData) as User[]).find(
-			(u) => u.student_id === studentId && u.password === password
-		);
+		const found = authenticate(studentId, password);
 
 		if (!found) return { ok: false, message: "NIM atau password salah." };
 
-		const { password: _pw, ...safeUser } = found;
-		setUser(safeUser);
-		localStorage.setItem("user", JSON.stringify(safeUser));
+		setUser(found);
+		try {
+			localStorage.setItem(STORAGE_KEY, found.id);
+		} catch {
+			
+		}
 		return { ok: true };
 	};
 
 	const logout = () => {
 		setUser(null);
-		localStorage.removeItem("user");
+		try {
+			localStorage.removeItem(STORAGE_KEY);
+		} catch {
+			
+		}
 	};
 
 	return (

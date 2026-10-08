@@ -1,11 +1,11 @@
 .con_menu {
 	height: 100%;
-	padding: 1.5rem;
+	padding: var(--padding);
 	position: fixed;
 	z-index: 9999;
-	background-color: var(--dark2);
+	background-color: var(--white3);
 	overflow: hidden;
-	width: calc(50px + 1.5rem * 2);
+	width: calc(50px + 1rem * 2);
 	transition: 0.35s var(--toeng);
 	border-right: 1px solid var(--border);
 }
@@ -35,6 +35,7 @@
 	width: 100%;
 	height: 3px;
 	border-radius: 10px;
+	background-color: var(--border) !important;
 }
 
 .menu .title {
@@ -48,7 +49,7 @@
 	width: 50px;
 	height: 50px;
 	background-color: var(--primary);
-	border-radius: 6px;
+	border-radius: 50%;
 	transition: 0.35s var(--toeng);
 	overflow: hidden;
 	object-fit: cover;
@@ -64,18 +65,12 @@
 	font-size: 1rem;
 }
 
-.title h1 span {
-	
-	opacity: 0.75;
-	background-color: transparent;
-}
-
 .expand {
 	width: 100%;
 	height: 50px;
 	display: grid;
 	place-items: center;
-	background-color: var(--dark3);
+	background-color: var(--white4);
 	border-radius: 0.25rem;
 	margin-top: 10px;
 	border: none;
@@ -101,6 +96,7 @@
 	gap: 0.55rem;
 	border: var(--wbr) solid transparent;
 	overflow: hidden;
+	color: var(--dark3);
 }
 
 .menu .con_links :is(.link, .active) span {
@@ -110,14 +106,19 @@
 	place-items: center;
 }
 
+a {
+	color: var(--white2);
+}
+
 .link {
 		opacity: 0.75;
 }
 
 .menu .con_links .active {
-	background-color: var(--dark3);
+	background-color: var(--primary);
 	border-radius: 0.15rem;
 	font-weight: var(--fm);
+	color: var(--white4);
 }
 
 /*.con_profile {
@@ -154,7 +155,7 @@
 	width: 100%;
 	height: 50px;
 	border: none;
-	background-color: var(--dark3);
+	background-color: var(--white4);
 	border-radius: 0.25rem;
 	margin-top: 10px;
 	display: grid;
@@ -180,15 +181,16 @@
 	color: var(--danger);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1280px) {
 	.con_menu,
 	.expand_menu {
 		width: 100%;
 		height: calc(34px + 1rem * 2);
+		border: 1px solid var(--border);
 		display: flex;
-		align-items: center;
+		align-items: flex-start;
 		position: fixed;
-		top: 0;
+		bottom: 0;
 		left: 0;
 		right: 0;
 		z-index: 50;
@@ -197,7 +199,10 @@
 
 	.con_menu {
 		border-right: none;
-		border-bottom: 1px solid var(--border);
+		/*border-bottom: 1px solid var(--border);*/
+		/*margin: var(--padding);*/
+		/*width: calc(100% - var(--padding) * 2);*/
+		/*border-radius: 1rem;*/
 	}
 
 	.logo {
@@ -213,6 +218,7 @@
 
 	.menu {
 		flex-direction: column;
+		height: fit-content;
 	}
 
 	.header {
@@ -222,7 +228,7 @@
 	}
 
 	.expand {
-		display: none; /* tombol expand desktop disembunyikan */
+		display: none;
 	}
 	.hamburger {
 		width: 34px;
@@ -232,8 +238,12 @@
 		display: block;
 	}
 
-	/* link, separator, profile disembunyikan sampai menu dibuka */
 	.phone_open {
-		height: 100vh;
+		height: auto;
+
+	}
+
+	.separator {
+		margin-bottom: 0 !important;
 	}
 }

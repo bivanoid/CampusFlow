@@ -9,4 +9,4 @@ export interface User {
 	ipk: number;
 }
 
-export type SafeUser = Omit<User, "password">;
+export type PublicUser = Omit<User, "password">;

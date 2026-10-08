@@ -2,6 +2,8 @@
 import { useState, type FormEvent } from "react";
 import { Navigate, useNavigate } from "react-router-dom";
 import { useAuth } from "../context/AuthContext";
+import s from "./login.module.css";
+import { LockOpen } from "lucide-react";
 
 export default function Login() {
 	const { user, login } = useAuth();
@@ -24,27 +26,41 @@ export default function Login() {
 	};
 
 	return (
-		<form onSubmit={handleSubmit}>
-			<h1>CampusFlow</h1>
+		<div className={s.con}>
+			<div className={s.con_form}>
+				<div className={s.title}>
+					<span>
+						
+					</span>
+					<h1>
+						Masukan NIM dan Passoword
+					</h1>
+				</div>
+				<form className={s.form} onSubmit={handleSubmit}>
+					<div className={s.con_input}>
+						<input
+							type="text"
+							placeholder="NIM"
+							value={studentId}
+							onChange={(e) => setStudentId(e.target.value)}
+							required
+						/>
+						<input
+							type="password"
+							placeholder="Password"
+							value={password}
+							onChange={(e) => setPassword(e.target.value)}
+							required
+						/>
+					</div>
 
-			<input
-				type="text"
-				placeholder="NIM"
-				value={studentId}
-				onChange={(e) => setStudentId(e.target.value)}
-				required
-			/>
-			<input
-				type="password"
-				placeholder="Password"
-				value={password}
-				onChange={(e) => setPassword(e.target.value)}
-				required
-			/>
+					{error && <p>{error}</p>}
 
-			{error && <p>{error}</p>}
-
-			<button type="submit">Masuk</button>
-		</form>
+					<button type="submit">
+						<LockOpen size={22} />
+					</button>
+				</form>
+			</div>
+		</div>
 	);
 }

@@ -1,0 +1,71 @@
+.con {
+	display: flex;
+	flex-direction: row;
+	padding: var(--padding);
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	gap: 1rem;
+}
+
+.con_form {
+	flex: 0.4;
+	height: 100%;
+	width: 100%;
+	max-width: 340px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.con_form .title {
+	display: block;
+	width: 100%;
+	font-size: 1.25rem;
+	aspect-ratio: 1/1;
+	transform: translateY(3rem);
+	background-color: var(--primary);
+	padding: 1rem;
+	border-radius: 0.75rem 0.75rem 0 0;
+	border: 5px solid var(--dark2);
+}
+
+.form {
+	z-index: 2;
+	display: grid;
+	grid-template-columns: 1fr auto;
+	gap: 1rem;
+	justify-content: center;
+	height: fit-content;
+	background-color: var(--dark2);
+	padding: var(--padding);
+	border-radius: 0.75rem;
+	height: fit-content;
+	width: 100%;
+}
+.con_input {
+	width: 100%;
+	height: fit-content;
+}
+
+.con_input input {
+	background-color: var(--dark3);
+	padding: 0.75rem 1rem;
+	height: 50px;
+	border: 1px solid var(--border);
+	margin-top: 10px;
+	width: 100%;
+	border-radius: 0.5rem;
+	color: var(--white3);
+}
+
+.form button {
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	background-color: #3DB37C;
+	background-color: var(--primary);
+	border: none;
+	color: var(--white3);
+	align-self: flex-end;
+}

@@ -1,4 +1,3 @@
-// src/components/navigation/Navigation.tsx
 import { NavLink } from "react-router-dom";
 import {
 	ChevronsLeftRight,
@@ -10,10 +9,10 @@ import {
 	X,
 } from "lucide-react";
 import { useState } from "react";
-import { useAuth } from "../../context/AuthContext";
 import s from "./navigation.module.css";
 import Dialog from "./Dialog";
-import logo from "../../assets/logo.webp"
+import logo from "../../assets/logo.webp";
+import { useAuth } from "../../context/AuthContext";
 
 const links = [
 	{ to: "/", label: "Dashboard", icon: University, end: true },
@@ -102,10 +101,7 @@ export default function Navigation() {
 						</span>
 						<p>{namaDepan}</p>
 					</div>
-					<button
-						className={s.logout}
-						onClick={() => setShowLogout(true)}
-					>
+					<button className={s.logout} onClick={() => setShowLogout(true)}>
 						<span>
 							<LogOut size={22} />
 						</span>
