@@ -5,11 +5,8 @@
 		"judul": "Membuat Dashboard dengan Next.js",
 		"deskripsi": "Buat 3 halaman (Dashboard, Mata Kuliah, Detail Tugas) menggunakan data dummy lokal dan tampilan responsif.",
 		"deadline": "2026-10-04",
-		"status": "belum_dikumpulkan",
-		"dikumpulkan_pada": null,
-		"file": null,
-		"nilai": null,
-		"catatan_dosen": null
+		"status": false,
+		"nilai": null
 	}, 
 	{
 		"id": "t02",
@@ -17,11 +14,8 @@
 		"judul": "Presentasi 10 Virtus",
 		"deskripsi": "Menerangkan materi sesuai nomor kelompok",
 		"deadline": "2026-10-08",
-		"status": "belum_dikumpulkan",
-		"dikumpulkan_pada": null,
-		"file": null,
-		"nilai": null,
-		"catatan_dosen": null
+		"status": false,
+		"nilai": null
 	},
 	{
 		"id": "t03",
@@ -29,11 +23,8 @@
 		"judul": "Wawancara Instansi",
 		"deskripsi": "Mengali data",
 		"deadline": "2026-10-08",
-		"status": "belum_dikumpulkan",
-		"dikumpulkan_pada": null,
-		"file": null,
-		"nilai": null,
-		"catatan_dosen": null
+		"status": true,
+		"nilai": null
 	}
 
 ]

@@ -3,6 +3,8 @@ import { useAuth } from "../context/AuthContext";
 import KalenderTugas from "../components/layouts/KalenderTugas";
 import { useTugas } from "../hooks/tugas";
 import { useState } from "react";
+import { Link } from "react-router-dom";
+import { ArrowUpRight } from "lucide-react";
 const hariIni = new Date().toLocaleDateString("id-ID", {
 	weekday: "long",
 	timeZone: "Asia/Jakarta",
@@ -25,7 +27,7 @@ export default function Dashboard() {
 			<div className={s.header}>
 				<p>Dashboard</p>
 				<p>
-					{user.name} - {user.student_id}
+					{user.name} - {user.student_id}KOntol
 				</p>
 			</div>
 			<div className={s.dates}>
@@ -57,18 +59,18 @@ export default function Dashboard() {
 				</div>
 				<div className={s.con_tugas}>
 					<h2>Daftar Tugas</h2>
-					<ul>
+					<div className={s.conItemTugas}>
 						{tugas.map((tugas) => (
-							<li key={tugas.id}>
+							<div className={s.itemTugas}  key={tugas.id}>
 								<p className={s.number}>{tugas.id}</p>
 								<div className={s.con_text}>
-									<p>{tugas.judul}</p>
+									<h3>{tugas.judul}</h3>
 									<p>{tugas.deadline}</p>
 								</div>
-								<button>Detail</button>
-							</li>
+								<Link className={s.button} to={`/tugas/${tugas.matkul_id}`} ><ArrowUpRight size={24}/></Link>
+							</div>
 						))}
-					</ul>
+					</div>
 				</div>
 			</div>
 		</div>

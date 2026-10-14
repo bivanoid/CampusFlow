@@ -1,0 +1,114 @@
+[
+  {
+    "id_materi": "mat-001",
+    "id_matkul": "pemodelan-perangkat-lunak",
+    "judul": "Pengantar Pemodelan Perangkat Lunak",
+    "pertemuan_ke": 1,
+    "deskripsi": "Konsep dasar pemodelan, peran model dalam pengembangan perangkat lunak, dan pengenalan notasi UML."
+  },
+  {
+    "id_materi": "mat-002",
+    "id_matkul": "pemodelan-perangkat-lunak",
+    "judul": "Use Case Diagram dan Class Diagram",
+    "pertemuan_ke": 2,
+    "deskripsi": "Menggambarkan kebutuhan pengguna dengan use case dan merancang struktur kelas beserta relasinya."
+  },
+  {
+    "id_materi": "mat-003",
+    "id_matkul": "arsitektur-industri",
+    "judul": "Pengantar Arsitektur Industri",
+    "pertemuan_ke": 1,
+    "deskripsi": "Gambaran umum arsitektur sistem pada lingkungan industri, komponen utama, dan standar yang digunakan."
+  },
+  {
+    "id_materi": "mat-004",
+    "id_matkul": "arsitektur-industri",
+    "judul": "Pola Arsitektur Sistem Terdistribusi",
+    "pertemuan_ke": 2,
+    "deskripsi": "Pola arsitektur seperti layered, client-server, dan microservices beserta kelebihan dan kekurangannya."
+  },
+  {
+    "id_materi": "mat-005",
+    "id_matkul": "jaringan-komunikasi-data",
+    "judul": "Dasar Jaringan dan Model OSI",
+    "pertemuan_ke": 1,
+    "deskripsi": "Konsep jaringan komputer, topologi, dan fungsi tiap lapisan pada model OSI dan TCP/IP."
+  },
+  {
+    "id_materi": "mat-006",
+    "id_matkul": "jaringan-komunikasi-data",
+    "judul": "Pengalamatan IP dan Subnetting",
+    "pertemuan_ke": 2,
+    "deskripsi": "Struktur alamat IPv4, kelas IP, serta cara membagi jaringan menggunakan subnetting."
+  },
+  {
+    "id_materi": "mat-007",
+    "id_matkul": "proses-perangkat-lunak",
+    "judul": "Model Proses Pengembangan Perangkat Lunak",
+    "pertemuan_ke": 1,
+    "deskripsi": "Perbandingan model Waterfall, Incremental, dan Spiral beserta situasi penggunaannya."
+  },
+  {
+    "id_materi": "mat-008",
+    "id_matkul": "proses-perangkat-lunak",
+    "judul": "Agile dan Scrum",
+    "pertemuan_ke": 2,
+    "deskripsi": "Prinsip Agile, peran dalam tim Scrum, sprint, dan artefak seperti product backlog."
+  },
+  {
+    "id_materi": "mat-009",
+    "id_matkul": "interaksi-manusia-dan-komputer",
+    "judul": "Prinsip Dasar Interaksi Manusia dan Komputer",
+    "pertemuan_ke": 1,
+    "deskripsi": "Pengantar HCI, faktor manusia dalam penggunaan sistem, dan tujuan antarmuka yang baik."
+  },
+  {
+    "id_materi": "mat-010",
+    "id_matkul": "interaksi-manusia-dan-komputer",
+    "judul": "Prinsip Desain dan Evaluasi Usability",
+    "pertemuan_ke": 2,
+    "deskripsi": "Heuristik Nielsen, aturan desain antarmuka, dan metode evaluasi usability."
+  },
+  {
+    "id_materi": "mat-011",
+    "id_matkul": "pemrograman-berorientasi-objek",
+    "judul": "Konsep Dasar OOP: Class dan Object",
+    "pertemuan_ke": 1,
+    "deskripsi": "Pengertian class, object, atribut, method, serta konstruktor."
+  },
+  {
+    "id_materi": "mat-012",
+    "id_matkul": "pemrograman-berorientasi-objek",
+    "judul": "Inheritance dan Polymorphism",
+    "pertemuan_ke": 2,
+    "deskripsi": "Pewarisan antar kelas, overriding, overloading, dan penerapan polimorfisme."
+  },
+  {
+    "id_materi": "mat-013",
+    "id_matkul": "pemrograman-web-lanjut",
+    "judul": "Pengantar Framework Web Modern",
+    "pertemuan_ke": 1,
+    "deskripsi": "Konsep SPA, komponen, dan routing menggunakan framework JavaScript modern."
+  },
+  {
+    "id_materi": "mat-014",
+    "id_matkul": "pemrograman-web-lanjut",
+    "judul": "State Management dan Integrasi API",
+    "pertemuan_ke": 2,
+    "deskripsi": "Pengelolaan state aplikasi serta pengambilan dan penyajian data dari REST API."
+  },
+  {
+    "id_materi": "mat-015",
+    "id_matkul": "upitra-dna",
+    "judul": "Pengenalan Upitra DNA",
+    "pertemuan_ke": 1,
+    "deskripsi": "Gambaran umum mata kuliah, tujuan pembelajaran, dan nilai-nilai yang dipelajari."
+  },
+  {
+    "id_materi": "mat-016",
+    "id_matkul": "upitra-dna",
+    "judul": "Studi Kasus dan Diskusi Kelompok",
+    "pertemuan_ke": 2,
+    "deskripsi": "Penerapan materi melalui studi kasus dan diskusi kelompok dengan presentasi hasil."
+  }
+]

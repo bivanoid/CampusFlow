@@ -15,3 +15,6 @@ export const formatDeadline = (iso: string) =>
 		minute: "2-digit",
 		timeZone: "Asia/Jakarta",
 	});
+
+export const getTugasByMatkul = (matkulId: string) =>
+	tugasData.filter((t) => t.matkul_id === matkulId).sort(byDeadline);

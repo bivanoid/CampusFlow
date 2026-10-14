@@ -1,10 +1,10 @@
 import { useMemo } from "react";
 import { tugasData, byDeadline } from "../lib/tugas";
-import type { Tugas, StatusTugas } from "../types/tugas";
+import type { Tugas } from "../types/tugas";
 
 interface Options {
 	matkulId?: string;
-	status?: StatusTugas;
+	status?: boolean;
 }
 
 export function useTugas({ matkulId, status }: Options = {}): Tugas[] {
@@ -13,8 +13,8 @@ export function useTugas({ matkulId, status }: Options = {}): Tugas[] {
 			tugasData
 				.filter(
 					(t) =>
-						(!matkulId || t.matkul_id === matkulId) &&
-						(!status || t.status === status),
+						(matkulId === undefined || t.matkul_id === matkulId) &&
+						(status === undefined || t.status === status),
 				)
 				.sort(byDeadline),
 		[matkulId, status],

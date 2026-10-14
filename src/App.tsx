@@ -6,6 +6,7 @@ import MainLayout from "./MainLayout";
 import { AuthProvider } from "./context/AuthContext";
 import Tugas from "./tugas/Tugas";
 import Dashboard from "./dashboard/Dashboard";
+import DetailMatkul from "./detailMatkul/DetailMatkul";
 
 function App() {
 	return (
@@ -25,7 +26,7 @@ function App() {
 					>
 						<Route path="/" element={<Dashboard />} />
 						<Route path="/tugas" element={<Tugas />} />
-						{/* halaman lain tinggal tambah di sini */}
+						<Route path="/tugas/:id" element={<DetailMatkul />}/>
 					</Route>
 				</Routes>
 			</AuthProvider>
