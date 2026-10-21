@@ -4,31 +4,30 @@
 	min-height: 100vh;
 	overflow: hidden;
 	padding: var(--padding);
+	padding-bottom: calc(50px + 1rem * 4);
 }
 
 .header {
 	display: flex;
 	flex-direction: column;
 	gap: 0.25rem;
-	border-bottom: 1px solid var(--border);
+	border-block: 1px solid var(--border);
+	border-inline: 1px solid var(--border);
 	padding-bottom: var(--padding);
-}
-
-.header p:nth-child(1) {
-	font-size: 1.5rem;
-	font-weight: var(--fb);
-}
-
-.header p:nth-child(2) {
-	opacity: 0.5;
+	padding: var(--padding);
 }
 
 .dates{
 	padding-block: var(--padding);
+	border-inline: 1px solid var(--border);
+	padding: var(--padding);
 }
 
-.dates p {
-	font-size: 1.25rem;
+.dates h1 {
+	text-transform: uppercase;
+	font-size: 2.5rem;
+	color: var(--primary);
+	font-weight: bold;
 }
 
 .ringkasan {
@@ -41,6 +40,28 @@
 	background-color: var(--border);
 	padding: 1px;
 }
+
+.ringkasan h1 {
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+	font-weight: bold;
+}
+
+.ringkasan svg {
+	opacity: 0.5;
+}
+
+.bintang {
+	display: flex;
+	gap: 0.15rem;
+}
+
+.bintang svg {
+	
+	opacity: 1 !important;
+}
+
 
 .item_ringkasan {
 	width: 100%;
@@ -61,19 +82,65 @@
 	color: var(--white2);
 }
 
+.jadwal {
+	padding: 1px;
+	padding-top: 0;
+	border-inline: 1px solid var(--border);
+}
+
+.jadwal .slide {
+	background-color: var(--white3);
+	padding: var(--padding);
+	color: var(--dark1);
+}
+
+.jadwal :is(.slide:nth-child(2), .slide:nth-child(3)) {
+	border-left: 1px solid var(--border);
+}
+
+.slide h3 {
+	color: var(--primary);
+	font-weight: bold;
+}
+
+.slide .jam {
+	display: flex;
+	padding: 0.5rem;
+	color: var(--dark1);
+	gap: 0.5rem;
+	align-items: center;
+	background-color: var(--white4);
+	width: fit-content;
+	margin-bottom: 0.5rem;
+	margin-top: 1rem;
+	border-radius: 20px;
+}
+
+.slide .jam p {
+	color: var(--dark1);
+}
+
+.slide .info p {
+	color: var(--dark1);
+}
+
 .con_kalender_tugas {
 	display: flex;
 	width: 100%;
+	height: 100%;
 	gap: 1px;
 	padding: 1px;
 	background-color: var(--border);
-	padding-top: 0;
+
 }
 
 .con_kalender {
-	width: fit-content;
-	height: fit-content;
-	display: block;
+	width: 100%;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 	background-color: var(--white3);
 }
 
@@ -89,6 +156,7 @@
 
 .con_tugas h2 {
 	border-bottom: 1px solid var(--border);
+	font-weight: bold;
 }
 
 .con_tugas .conItemTugas {
@@ -123,7 +191,7 @@
 .con_tugas .itemTugas .number {
 	padding-left: 1rem;
 	font-size: 2rem;
-	opacity: 0.25;
+	opacity: 0.5;
 	text-transform: capitalize;
 }
 
@@ -139,6 +207,8 @@
 	white-space: nowrap;
 	overflow: hidden;
 	text-overflow: ellipsis;
+	font-weight: bold;
+	color: var(--primary);
 }
 
 .con_tugas .itemTugas .button {
@@ -155,17 +225,55 @@
 	border-left: 1px solid var(--border);
 }
 
+.con_tugas .itemTugas .button:hover {
+	background-color: var(--primary);
+	color: var(--white3);
+	transition: 0.25s var(--toeng);
+}
+
+.con_tugas .itemTugas .button svg {
+	transition: 0.5s var(--toeng);
+}
+.con_tugas .itemTugas .button:hover svg {
+	rotate: 360deg;
+}
+
 @media (max-width:1280px) {
+	.con_dashboard {
+		padding: 0.5rem;
+	}
 	.ringkasan {
 		display: flex;
 		flex-direction: row;
 		height: auto;
 	}
 
+	.dates {
+		border-top: 1px solid var(--border);
+	}
+
+	.dates h1 {
+		font-size: 1.5rem;
+	}
+
+	.bintang svg {
+		width: 14px !important;
+		aspect-ratio: 1/1;
+}
+
 	.item_ringkasan {
 		font-size: 0.75rem;
 		padding: 0.5rem;
-		height: 100%;
+		height: stretch;
+		padding-block: 1rem;
+	}
+
+	.ringkasan {
+		height: auto;
+	}
+
+	.ringkasan h1 {
+		font-size: 1.25rem;
 	}
 
 	.con_kalender_tugas {
@@ -181,5 +289,9 @@
 		width: fit-content;
 		padding: 0.25rem 0.5rem;
 		margin-top: 1rem;
+	}
+
+	.con_kalender_tugas {
+		padding-bottom: 0;
 	}
 }

@@ -1,0 +1,158 @@
+.con_detail {
+	background-color: var(--white3);
+	min-height: 100vh;
+	position: relative;
+}
+
+.tidak_ada {
+	background-color: var(--border);
+}
+
+.belum_ada {
+	background-color: var(--white3);
+	padding: 1rem;
+	color: var(--danger);
+}
+
+.con_detail .back {
+	padding: 0.5rem;
+	color: var(--dark1);
+	margin-bottom: 2rem;
+	position: fixed;
+	bottom: calc(50px + 1rem * 2);
+	left: 50%;
+	transform: translateX(-50%);
+	background-color: var(--white3);
+	border: 1px solid var(--border);
+	font-weight: bold;
+	border-radius: 30px;
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+	z-index: 9999;
+	color: var(--danger);
+}
+
+.con_detail h1 {
+	margin-bottom: 1rem;
+	color: var(--primary);
+	padding: var(--padding);
+	border: 1px solid var(--border);
+	font-weight: bold;
+}
+
+:is(.tugas, .materi) {
+	background-color: var(--border);
+	padding: 1px;
+	display: flex;
+	flex-direction: column;
+	gap: 1px;
+}
+
+.materi {
+	/*padding-top: 0;*/
+	margin-top: 1rem;
+}
+
+:is(.tugas, .materi) h2 {
+	padding: var(--padding);
+	background-color: var(--white3);
+}
+
+.card {
+	background-color: var(--white3);
+	padding: var(--padding);
+	display: flex;
+	gap: 1rem;
+}
+
+.card h3 {
+	font-weight: bold;
+}
+
+.con_text span {
+	opacity: 0.75;
+}
+
+.thumbnail {
+	width: 50px;
+	height: 50px;
+	background-color: #BA1F33;
+	border-radius: 6px;
+	display: grid;
+	place-items: center;
+	color: var(--white3);
+	flex-shrink: 0;
+}
+
+.thumbnail_materi {
+	background-color: #284B63;
+}
+
+
+.upload {
+	display: flex;
+	gap: 0.5rem;
+	align-items: center;
+	margin-top: 0.5rem;
+	width: 100%;
+	flex-wrap: wrap;
+	
+}
+
+.pilih {
+	flex: 1;
+	min-width: 0;
+	padding: 0.5rem 0.75rem;
+	border: 1px dashed var(--border);
+	cursor: pointer;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.pilih p {
+	display: flex;
+	align-items: center;
+	gap: 0.75rem;
+}
+
+.kirim {
+	padding: 0.5rem 1rem;
+	border: none;
+	border-radius: 0px;
+	background-color: var(--white4);
+	border: 1px solid var(--border);
+	cursor: pointer;
+}
+
+.kirim:disabled {
+	opacity: 0.5;
+	cursor: not-allowed;
+}
+
+.selesai {
+	color: #16a34a;
+	font-weight: 600;
+	margin-top: 1rem;
+}
+
+.belum {
+	color: #dc2626;
+	margin-top: 1rem;
+}
+
+@media (max-width:747px) {
+	.con_detail {
+		height: fit-content;
+		overflow-y: auto;
+		padding: 0.5rem;
+		padding-bottom: calc(34px + 1rem * 6);
+	}
+
+	.con_detail .back {
+		bottom: calc(34px + 1rem);
+		left: 50%;
+		transform: translate(-50%);
+	}
+}

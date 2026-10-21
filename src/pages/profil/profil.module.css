@@ -1,0 +1,174 @@
+.con_profil {
+	padding: 1px;
+	display: flex;
+	min-height: calc(100svh - 2rem);
+	background-color: var(--border);
+	margin: 1rem;
+	width: calc(100% - 2rem);
+	box-sizing: border-box;
+	margin-bottom: calc(50px + 1rem * 4);
+}
+
+.data {
+	display: flex;
+	flex-direction: column;
+	gap: 1px;
+	width: 100%;
+	min-width: 0;
+	
+}
+
+.biodata {
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+	padding: var(--padding);
+	background-color: var(--white3);
+}
+
+.avatar {
+	width: 100px;
+	aspect-ratio: 1 / 1;
+	flex-shrink: 0;
+	overflow: hidden;
+	border-radius: 50%;
+	
+}
+
+.avatar img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	display: block;
+}
+
+.default_profile {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: var(--primary);
+	color: var(--white3);
+	font-size: 2.5rem;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+
+.identitas {
+	min-width: 0;
+}
+
+.identitas h2 {
+	margin: 0;
+	font-size: 1.5rem;
+}
+
+.identitas p {
+	margin: 0.25rem 0 0;
+	opacity: 0.6;
+	font-size: 1.1rem;
+}
+
+
+.ringkasan {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 1px;
+}
+
+.item {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: 0.5rem;
+	min-height: 150px;
+	padding: var(--padding);
+	background-color: var(--white3);
+	min-width: 0;
+}
+
+.item p {
+	margin: 0;
+	font-size: 1.1rem;
+	opacity: 0.6;
+}
+
+.item h3 {
+	margin: 0;
+	font-size: clamp(1.25rem, 3vw, 2rem);
+	overflow-wrap: anywhere;
+}
+
+
+.details {
+	flex: 1;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 1px;
+	background-color: var(--border);
+}
+.item_detail {
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+	padding: var(--padding);
+	background-color: var(--white3);
+	min-width: 0;
+}
+
+.icon {
+	width: 48px;
+	height: 48px;
+	flex-shrink: 0;
+	display: grid;
+	place-items: center;
+	border-radius: 50%;
+	/*background-color: var(--border);*/
+}
+
+.icon svg {
+	width: 32px;
+	height: 32px;
+	opacity: 0.5;
+}
+
+.teks {
+	display: flex;
+	flex-direction: column;
+	gap: 0.25rem;
+	min-width: 0;
+}
+
+.teks p {
+	margin: 0;
+	font-size: 1rem;
+	opacity: 0.5;
+}
+
+.teks h4 {
+	margin: 0;
+	font-size: 1.25rem;
+	font-weight: 500;
+	overflow-wrap: anywhere;
+}
+
+@media (max-width: 768px) {
+	.biodata {
+		flex-direction: column;
+		text-align: center;
+	}
+
+	.ringkasan,
+	.details {
+		grid-template-columns: 1fr;
+	}
+
+	.item {
+		min-height: auto;
+	}
+
+	.con_profil {
+		margin-bottom: calc(0.5rem);
+	}
+}

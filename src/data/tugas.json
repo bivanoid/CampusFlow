@@ -18,12 +18,21 @@
 		"nilai": null
 	},
 	{
-		"id": "t03",
+		"id": "t04",
 		"matkul_id": "pemodelan-perangkat-lunak",
 		"judul": "Wawancara Instansi",
 		"deskripsi": "Mengali data",
 		"deadline": "2026-10-08",
-		"status": true,
+		"status": false,
+		"nilai": null
+	},
+	{
+		"id": "t04",
+		"matkul_id": "pemrograman-berorientasi-objek",
+		"judul": "Tugas python",
+		"deskripsi": "Mengali data keren",
+		"deadline": "2026-10-20",
+		"status": false,
 		"nilai": null
 	}
 

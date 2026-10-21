@@ -7,8 +7,14 @@
     "program": "Software Engineering",
     "semester": 3,
     "avatar_url": "./images/user/253036016.jpeg",
-    "ipk": 3.75,
-    "ipk_semester_lalu": 3.80
+    "ipk": 1.75,
+    "ipk_semester_lalu": 3.80,
+    "tahun_angkatan": 2025,
+    "perguruan_tinggi": "Universitas Pignateli Triputra",
+    "jenis_kelas": "reguler",
+    "email": "abababa@gmail.com",
+    "domisili": "Kota Surakarta, Jawa Tengah",
+    "tagihan": 2500000
   },
   "mhs-2026-002": {
     "id": "mhs-2026-002",
@@ -19,7 +25,13 @@
     "semester": 3,
     "avatar_url": "/images/ida.jpg",
     "ipk": 3.85,
-    "ipk_semester_lalu": 3.80
+    "ipk_semester_lalu": 3.80,
+    "tahun_angkatan": 2025,
+    "perguruan_tinggi": "Universitas Pignateli Triputra",
+    "jenis_kelas": "reguler",
+    "email": "yayaya@gmail.com",
+    "domisili": "Kab Sukoharjo, Jawa Tengah",
+    "tagihan": 2500000
   },
   "mhs-2026-003": {
     "id": "mhs-2026-003",
@@ -30,6 +42,12 @@
     "semester": 1,
     "avatar_url": "/images/budi.jpg",
     "ipk": 3.50,
-    "ipk_semester_lalu": 3.75
+    "ipk_semester_lalu": 3.75,
+    "tahun_angkatan": 2024,
+    "perguruan_tinggi": "Universitas Pignateli Triputra",
+    "jenis_kelas": "reguler",
+    "email": "gagaga@gmail.com",
+    "domisili": "Kab Sragen, Jawa Tengah",
+    "tagihan": 2500000
   }
 }

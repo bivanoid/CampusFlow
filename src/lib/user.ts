@@ -1,34 +1,23 @@
 import userJson from "../data/user.json";
 import type { User, PublicUser } from "../types/user";
 
-const userData = userJson as Record<string, User>;
+const users = Object.values(userJson) as User[];
 
-const toPublic = ({ password: _password, ...rest }: User): PublicUser => rest;
+const hapusPassword = ({ password: _pw, ...publik }: User): PublicUser => publik;
 
-export const getAllUsers = (): PublicUser[] =>
-	Object.values(userData).map(toPublic);
-
-export const getUserById = (id: string): PublicUser | undefined => {
-	const user = userData[id];
-	return user ? toPublic(user) : undefined;
-};
-
-export const getUserByStudentId = (studentId: string): PublicUser | undefined => {
-	const user = Object.values(userData).find((u) => u.student_id === studentId);
-	return user ? toPublic(user) : undefined;
-};
-
-export const authenticate = (
-	studentId: string,
-	password: string
-): PublicUser | null => {
-	const user = Object.values(userData).find(
+export const authenticate = (studentId: string, password: string) => {
+	const found = users.find(
 		(u) => u.student_id === studentId && u.password === password
 	);
-	return user ? toPublic(user) : null;
+	return found ? hapusPassword(found) : null;
 };
 
-export const getInisial = (name: string): string =>
+export const getUserById = (id: string) => {
+	const found = users.find((u) => u.id === id);
+	return found ? hapusPassword(found) : null;
+};
+
+export const getInisial = (name: string) =>
 	name
 		.split(" ")
 		.map((n) => n[0])

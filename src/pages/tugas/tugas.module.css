@@ -1,0 +1,194 @@
+.con_tugas {
+	padding: 1rem;
+	height: 100vh;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	padding-bottom: calc(50px + 1rem * 4);
+}
+
+.information {
+	width: 100%;
+	height: fit-content;
+	display: flex;
+	flex-shrink: 0; /* header tidak ikut menyusut */
+}
+
+.count_tugas {
+	display: flex;
+	padding: 1rem;
+	border-right: 1px solid var(--border);
+	border-top: 1px solid var(--border);
+	border-left: 1px solid var(--border);
+}
+
+.con_horizontal {
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+	gap: 1rem;
+	flex: 1; /* ambil sisa tinggi setelah .information */
+	min-height: 0; /* wajib: izinkan menyusut di dalam flex */
+}
+
+.jadwal {
+	background-color: var(--border);
+	padding: 1px;
+	display: flex;
+	flex-direction: column;
+	gap: 1px;
+	overflow-y: auto;
+	min-height: 0;
+}
+
+.detail {
+	overflow-y: auto;
+	min-height: 0;
+	position: relative;
+}
+
+.itemJadwal {
+	background-color: var(--border);
+	display: flex;
+	flex-direction: column;
+	gap: 1px;
+	position: relative;
+}
+
+.itemJadwal .active_day {
+	position: absolute;
+	height: 100%;
+	width: 1.75rem;
+	display: grid;
+	place-items: center;
+	display: none;
+	text-align: center;
+	padding-right: 0.25rem;
+	text-transform: uppercase;
+	font-weight: var(--fb);
+	color: var(--white3);
+	background-color: var(--primary);
+	transform: translateX(-1.75rem);
+	writing-mode: vertical-rl;
+}
+
+.itemJadwal h1 {
+	padding-left: var(--padding);
+	font-size: 2.5rem;
+	text-transform: uppercase;
+	width: 100%;
+	padding-block: 1.25rem;
+	display: flex;
+	gap: 0.75rem;
+	background-color: var(--white3);
+	font-weight: bold;
+}
+
+.itemJadwal h1 .count {
+	opacity: 0.5;
+	display: block !important;
+	font-weight: bold;
+}
+
+.hari {
+	color: var(--dark1);
+}
+
+.itemJadwal .hariAktif {
+	color: var(--primary) !important;
+}
+
+.matkul {
+	display: flex;
+	flex-direction: column;
+	padding: var(--padding);
+	background-color: var(--white3);
+	text-decoration: none;
+	color: inherit;
+	display: block;
+}
+
+.matkul h2 {
+	font-size: 1.25rem;
+	color: var(--primary);
+	font-weight: bold;
+}
+
+.jam {
+	display: flex;
+	padding: 0.5rem;
+	color: var(--dark1);
+	gap: 0.5rem;
+	align-items: center;
+	background-color: var(--white4);
+	width: fit-content;
+	margin-bottom: 0.5rem;
+	margin-top: 1rem;
+	border-radius: 20px;
+}
+
+.button {
+	display: block;
+	background-color: var(--white3);
+	border-radius: 0;
+	height: 4rem;
+	aspect-ratio: 1/1;
+	color: var(--primary);
+	font-family: var(--f1);
+	display: grid;
+	place-items: center;
+	border: none;
+	border: 1px solid var(--border);
+	align-self: flex-end;
+	justify-self: flex-end;
+}
+
+.button:hover {
+	background-color: var(--primary);
+	color: var(--white3);
+	transition: 0.25s var(--toeng);
+}
+
+.button svg {
+	transition: 0.5s var(--toeng);
+}
+.button:hover svg {
+	rotate: 360deg;
+}
+
+@media (max-width: 747px) {
+	.con_tugas {
+		padding: 0.5rem;
+	}
+	.itemJadwal h1 {
+		font-size: 2rem;
+	}
+
+	.detail {
+		position: fixed;
+		height: 100%;
+		top: 0;
+		left: 0;
+		overflow: auto !important;
+	}
+}
+
+@media (max-width: 768px) {
+	.con_tugas {
+		height: auto;
+		overflow: hidden;
+	}
+	.con_horizontal {
+		grid-template-columns: 1fr;
+	}
+	.jadwal,
+	.detail {
+		overflow-y: visible;
+	}
+
+	.detail {
+		display: none;
+	}
+	.detailAktif {
+		display: block;
+	}
+}

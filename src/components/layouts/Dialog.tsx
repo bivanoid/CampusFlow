@@ -1,4 +1,4 @@
-// src/components/dialog/Dialog.tsx
+
 import { useEffect } from "react";
 import { createPortal } from "react-dom";
 import s from "./dialog.module.css";
