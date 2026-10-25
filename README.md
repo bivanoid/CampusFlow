@@ -1,5 +1,6 @@
 # CampusFlow
 Projek Pemrograman Web Lanjut
+https://campus-flow-flax.vercel.app/
 
 ## Tech
 1. React.JS
@@ -11,7 +12,7 @@ Projek Pemrograman Web Lanjut
 3. react-day-picker
 
 ## Design
-1. Font: Commissioner - From Google Font.
+1. Font: Commissioner - From Google Font
 2. Navbar interaktif
 
 ## Login Page
